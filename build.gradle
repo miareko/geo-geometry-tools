@@ -1,0 +1,17 @@
+allprojects {
+    group 'io.github.miareko.geo'
+    version '0.1-SNAPSHOT'
+
+    apply plugin: 'java'
+    apply plugin: 'idea'
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    sourceCompatibility = 1.7
+    targetCompatibility = 1.7
+}
+

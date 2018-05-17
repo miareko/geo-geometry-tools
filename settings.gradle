@@ -1,0 +1,4 @@
+rootProject.name = 'geojson-with-google-s2'
+
+include 'geojson-parser'
+
