@@ -25,4 +25,8 @@ public class GeoJsonFeatureCollection extends GeoJsonObject {
             this.features.add(new GeoJsonFeature(feature));
         }
     }
+
+    public List<GeoJsonFeature> getFeatures() {
+        return features;
+    }
 }

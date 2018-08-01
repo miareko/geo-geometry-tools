@@ -8,9 +8,15 @@ import com.alibaba.fastjson.JSONObject;
  */
 public final class GeoJson {
 
-    public static GeoJsonObject parse(String source) {
-        JSONObject jsonObj = JSON.parseObject(source);
-        return GeoJsonObject.parse(jsonObj);
+    /**
+     * parse json to GeoJsonObject
+     * @param source json string
+     * @param <T> subclass type of GeoJsonObject
+     * @return an instance of GeoJsonObject's subclass
+     */
+    public static <T extends GeoJsonObject> T parse(String source) {
+        JSONObject jsonObject = JSON.parseObject(source);
+        return (T) GeoJsonObject.parse(jsonObject);
     }
 
     private GeoJson() {}

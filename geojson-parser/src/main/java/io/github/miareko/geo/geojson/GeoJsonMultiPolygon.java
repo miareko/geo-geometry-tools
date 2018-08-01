@@ -24,4 +24,8 @@ public class GeoJsonMultiPolygon extends GeoJsonObject {
         }
         this.coordinates = new MultiPolygon(polygons);
     }
+
+    public MultiPolygon getMultiPolygon() {
+        return coordinates;
+    }
 }

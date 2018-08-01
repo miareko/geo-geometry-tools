@@ -1,4 +1,4 @@
-rootProject.name = 'geojson-with-google-s2'
+rootProject.name = 'geojson-s2-tools'
 
-include 'geojson-parser'
+include 'geojson-parser', 'geojson-s2'
 
